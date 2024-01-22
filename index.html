@@ -1,26 +1,209 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hockey website</title>
     <!-- Tailwind and daisyUI cdn link -->
-
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
 
     <!-- google fonts link -->
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
 
     <!-- font awesome kit -->
+    <script src="https://kit.fontawesome.com/c84c25c127.js" crossorigin="anonymous"></script>
 
     <style>
-        .p-text{
-
+        .p-text {
+            font-family: 'Manrope', sans-serif;
         }
-        
     </style>
 </head>
-<body>
-    <header>
+
+<body class=" bg-white text-black p-text">
+    <header class="w-4/5 mx-auto">
+        <!-- navbar section -->
+        <div class="">
+            <div class="navbar">
+                <div class="navbar-start">
+                    <div class="dropdown text-[#707070]">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                            <li><a>Home</a></li>
+                            <li><a>About</a></li>
+                            <li><a>Pages</a></li>
+                            <li><a>Blog</a></li>
+                            <li><a>Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="flex mr-56">
+                        <a class="btn btn-ghost text-2xl p-text font-bold">Hockey<sup
+                                class="text-red-600 px-0 mx-0">,</sup>s</a>
+                    </div>
+                </div>
+                <div class="navbar-center hidden lg:flex text-[#707070]  ">
+                    <ul class="menu menu-horizontal px-1">
+                        <li><a>Home</a></li>
+                        <li><a>About</a></li>
+                        <li><a>Pages</a></li>
+                        <li><a>Blog</a></li>
+                        <li><a>Contact</a></li>
+                        <i class="fa-solid fa-magnifying-glass flex justify-center items-center ml-56"></i>
+                    </ul>
+                </div>
+                <div class="navbar-end">
+                    <a class="btn bg-[#FF4240] border-none text-white font-semibold text-lg">Get Ticket</a>
+                </div>
+            </div>
+        </div>
+        <!-- banner slide section -->
+        <section class="mb-20 mt-5 mx-auto">
+            <div class="">
+                <!-- slider -->
+                <div class="">
+                    <div class="carousel w-full">
+                        <div id="slide1" class="carousel-item relative w-full">
+                            <!--start image with over text -->
+                            <div class="">
+                                <div class="w-full h-3/5 flex-row lg:relative rounded-md">
+                                    <img src="Images/1.png" alt="">
+                                </div>
+                                <div class=" absolute bg-black w-auto h-auto lg:right-5 lg:top-86 p-4 rounded-md">
+                                    <p class="mt-1 text-white">Software Engineer</p>
+                                    <p class="my-3 text-white text-sm p-2">Dit amet consectetur. Condimentum dignissim
+                                        adipiscing aliquam <br> turpis placerat dolor. Purus urna in sit nullam proin.
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- start image with over text -->
+                            <div
+                                class="absolute flex justify-between transform -translate-y-1/4 left-4 gap-10 left-4 sm:top-70 lg:bottom-20">
+                                <a href="#slide4" class="btn btn-circle">❮</a>
+                                <a href="#slide2" class="btn btn-circle">❯</a>
+                            </div>
+                        </div>
+                        <div id="slide2" class="carousel-item relative w-full">
+                            <!--start image with over text -->
+                            <div class="">
+                                <div class="w-full h-3/5 flex-row lg:relative rounded-md">
+                                    <img src="Images/1.png" alt="">
+                                </div>
+                                <div class=" lg:absolute bg-black w-auto h-auto lg:right-5 lg:top-86 p-4 rounded-md">
+                                    <p class="mt-1 text-white">Software Engineer</p>
+                                    <p class="my-3 text-white text-sm p-2">Dit amet consectetur. Condimentum dignissim
+                                        adipiscing aliquam <br> turpis placerat dolor. Purus urna in sit nullam proin.
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- start image with over text -->
+                            <div
+                                class="absolute flex justify-between transform -translate-y-1/4 left-4 gap-10 left-4 sm:top-70 lg:bottom-20">
+                                <a href="#slide1" class="btn btn-circle">❮</a>
+                                <a href="#slide3" class="btn btn-circle">❯</a>
+                            </div>
+                        </div>
+                        <div id="slide3" class="carousel-item relative w-full">
+                            <!--start image with over text -->
+                            <div class="">
+                                <div class="w-full h-3/5 flex-row lg:relative rounded-md">
+                                    <img src="Images/1.png" alt="">
+                                </div>
+                                <div class=" lg:absolute bg-black w-auto h-auto lg:right-5 lg:top-86 p-4 rounded-md">
+                                    <p class="mt-1 text-white">Software Engineer</p>
+                                    <p class="my-3 text-white text-sm p-2">Dit amet consectetur. Condimentum dignissim
+                                        adipiscing aliquam <br> turpis placerat dolor. Purus urna in sit nullam proin.
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- start image with over text -->
+                            <div
+                                class="absolute flex justify-between transform -translate-y-1/4 left-4 gap-10 left-4 sm:top-70 lg:bottom-20">
+                                <a href="#slide2" class="btn btn-circle">❮</a>
+                                <a href="#slide4" class="btn btn-circle">❯</a>
+                            </div>
+                        </div>
+                        <div id="slide4" class="carousel-item relative w-full">
+                            <!--start image with over text -->
+                            <div class="">
+                                <div class="w-full h-3/5 flex-row lg:relative rounded-md">
+                                    <img src="Images/1.png" alt="">
+                                </div>
+                                <div class=" lg:absolute bg-black w-auto h-auto lg:right-5 lg:top-86 p-4 rounded-md">
+                                    <p class="mt-1 text-white">Software Engineer</p>
+                                    <p class="my-3 text-white text-sm p-2">Dit amet consectetur. Condimentum dignissim
+                                        adipiscing aliquam <br> turpis placerat dolor. Purus urna in sit nullam proin.
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- start image with over text -->
+                            <div
+                                class="absolute flex justify-between transform -translate-y-1/4 left-4 gap-10 left-4 sm:top-70 lg:bottom-20">
+                                <a href="#slide3" class="btn btn-circle">❮</a>
+                                <a href="#slide1" class="btn btn-circle">❯</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Professional Hockeys Club section -->
+        <section class="mx-auto">
+            <div class="my-20">
+                <h2 class="text-4xl font-bold p-text text-center mb-5">Professional Hockeys Club</h2>
+                <p class="flex justify-center items-center text-lg p-text text-center mx-auto w-1/2">Dit amet
+                    consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit
+                    nullam proin. </p>
+                <!-- range container section -->
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-1">
+                    <div class="w-auto my-5 p-2 text-center">
+                        <div class="radial-progress text-primary text-[#FF4240] " style="--value:87;"
+                            role="progressbar">
+                            <p class="text-black font-bold">87%</p>
+                        </div>
+                        <h3 class="font-bold">Prayer Facility</h3>
+                        <p>Amet consectetur. Condimentum <br> dignissim adipiscing .</p>
+                    </div>
+                    <div class="w-auto my-5 p-2 text-center">
+                        <div class="radial-progress text-primary text-[#49D293] " style="--value:95;"
+                            role="progressbar">
+                            <p class="text-black font-bold">95%</p>
+                        </div>
+                        <h3 class="font-bold">Experienced Coach</h3>
+                        <p>Amet consectetur. Condimentum <br> dignissim adipiscing .</p>
+                    </div>
+                    <div class="w-auto my-5 p-2 text-center">
+                        <div class="radial-progress text-primary text-[#FFB546] " style="--value:90;"
+                            role="progressbar">
+                            <p class="text-black font-bold">90%</p>
+                        </div>
+                        <h3 class="font-bold">Senior Player</h3>
+                        <p>Amet consectetur. Condimentum <br> dignissim adipiscing .</p>
+                    </div>
+                    <div class="w-auto my-5 p-2 text-center">
+                        <div class="radial-progress text-primary text-[#4C8DF1] " style="--value:80;"
+                            role="progressbar">
+                            <p class="text-black font-bold">80%</p>
+                        </div>
+                        <h3 class="font-bold">Training Ground</h3>
+                        <p>Amet consectetur. Condimentum <br> dignissim adipiscing .</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
 
     </header>
     <main>
@@ -30,4 +213,5 @@
 
     </footer>
 </body>
+
 </html>
